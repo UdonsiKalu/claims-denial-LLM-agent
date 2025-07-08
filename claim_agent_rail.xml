@@ -1,0 +1,16 @@
+<guardrails>
+  <output>
+    <string name="thought"
+            description="Brief reasoning for tool choice"
+            required="true" />
+    
+    <choice name="action" discriminator="action" description="The tool to use for this query" required="true">
+      <case name="AnalyzeClaim" />
+      <case name="RetrieveCMSPolicy" />
+    </choice>
+
+    <string name="action_input"
+            description="The input string to send to the tool"
+            required="true" />
+  </output>
+</guardrails>
