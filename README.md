@@ -1,17 +1,33 @@
-Policy-Guided Claim Denial Agent
+## Policy-Guided Claim Denial Agent
 
-This project delivers a claim denial assistant built using Streamlit and Retrieval-Augmented Generation (RAG). 
-It interprets denial scenarios based on real-world payer policy content and provides guided insights for insurance analysts, benefits auditors, and healthcare teams.
+This repository contains a LangChain-powered agent designed to evaluate Medicare and payer-specific claim denial scenarios using retrieval-augmented generation (RAG). The agent combines FAISS-GPU document retrieval, structured parsing, tool-based execution, and Ollama LLM reasoning to provide clear, policy-grounded denial analysis.
 
-Features
-    Natural language interface for submitting denial scenarios
-    RAG-enabled grounding from benefit and coverage policy documents
-    Agent reasoning chain with transparent step-by-step justification
-    Interactive UI for rapid claim triage and eligibility review
-    Support for multiple policy sources and CMS-based adjudication cues
+## Features
 
-Architecture Overview
-    Core framework: Streamlit
-    Retrieval: FAISS semantic search or vector DB
-    Language model: OpenAI/GPT or local LLM
-    Backend: Python with modular agent wrappers
+- Modular tool-calling agent with `AnalyzeClaim`, `RetrieveCMSPolicy`, and `UpdatePolicies`
+- Regex-based parsing of CPT codes, diagnoses, modifiers, and payer instructions
+- Guardrails-enforced reasoning with structured JSON outputs
+- FAISS-GPU semantic retrieval using CMS policy documents (Chapters 1, 12, 23, 30)
+- EnsembleRetriever blending BM25 and FAISS with configurable weights
+- CUDA-accelerated LLM inference using Ollama and Llama3
+- Streamlit-compatible frontend (optional), embeddable via reverse proxy
+
+## Architecture Overview
+
+User Input → Agent → Tool Selection → Claim Parser / Retriever ↓ GPU Claim Analyzer (RAG) ↓ Policy-Grounded Response
+
+## File Overview
+
+| File                  | Description                                      |
+|-----------------------|--------------------------------------------------|
+| tool.py               | LangChain Tool wrappers for claim analysis       |
+| faiss_gpu.py          | GPU-optimized analyzer and retriever             |
+| agent.py              | MedicareClaimAgent for agent execution           |
+| manuals/              | CMS PDFs parsed into vector chunks               |
+| app.py                | Streamlit frontend (optional)                    |
+
+## Installation
+
+git clone https://github.com/UdonsiKalu/policy-denial-LLM.git
+cd policy-denial-LLM
+pip install -r requirements.txt
