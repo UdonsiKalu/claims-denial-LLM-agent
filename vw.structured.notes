@@ -1,0 +1,1222 @@
+1. Structured Data (CSV/TXT/DB Tables)
+Category			Key Components														Denial Prevention Use Case
+NCD Data			ncd_trkg, ncd_trkg_bnft_xref, NCD_PBLCTN_REF						National coverage rule enforcement
+LCD Data			lcd, lcd_x_hcpc_code, lcd_x_contractor, lcd_x_primary_jurisdiction	Local coverage rule enforcement
+Articles			article, article_x_hcpc_code, article_x_icd10_covered				Billing/coding clarifications
+NCCI Edits			Hospital/Practitioner PTP Edits (ccioph*, ccipra*), MUE Tables		Procedure bundling/unit limit checks
+Denial Codes		CARCs/RARCs (from clm104c22.pdf extraction)							Denial reason mapping
+Contractor Data	contractor, contractor_jurisdiction, contractor_type_lookup				Payer-specific rule application
+
+
+2. Policy Documents (PDFs for FAISS)
+Category				Key Documents														Embedded Content
+NCD Policies			NCD PDFs (from CMS manuals)											National coverage rationales
+LCD Policies			Final LCD PDFs (by MAC)												Local coverage indications
+B&C Articles			A58896.pdf, L38945.pdf (Local Articles)								Claim submission specifics
+CMS Manuals				Chapter 1 - General Billing.pdf, Chapter 12 - Physicians.pdf		Timely filing, provider rules
+NCCI Manuals			2025_ncci_medicare_policy_manual.pdf								Modifier rules, code pair rationales
+Crosswalk Documents		clm104c*crosswalk.pdf												Policy-to-manual mappings	N/A
+
+
+3. Composite Data Products
+Resource				Components														Purpose
+Unified Coverage DB		NCDs + LCDs + Articles (joined via article_related_documents)	Single source for coverage rules
+FAISS Vector Index		ll PDFs (NCD/LCD/Articles/Manuals) - chunked and embedded		Semantic search for ambiguous cases
+Denial Predictor		NCCI Edits + CARCs + Historical Denials							Real-time claim risk scoring
+
+
+================================lcd
+
+(faiss_gpu1) (base) udonsi-kalu@dell:/media/udonsi-kalu/New Volume/denials/denials/faiss_input$ mdb-schema "/media/udonsi-kalu/New Volume/denials/cms/manuals/all_data/all_lcd/all_lcd.mdb"
+-- ----------------------------------------------------------
+-- MDB Tools - A library for reading MS Access database files
+-- Copyright (C) 2000-2011 Brian Bruns and others.
+-- Files in libmdb are licensed under LGPL and the utilities under
+-- the GPL, see COPYING.LIB and COPYING files respectively.
+-- Check out http://mdbtools.sourceforge.net
+-- ----------------------------------------------------------
+
+-- That file uses encoding UTF-8
+
+CREATE TABLE [update_period]
+ (
+	[period_id]			Long Integer NOT NULL, 
+	[begin_date]			DateTime NOT NULL, 
+	[end_date]			DateTime NOT NULL
+);
+
+CREATE TABLE [state_lookup]
+ (
+	[state_id]			Long Integer NOT NULL, 
+	[state_abbrev]			Text (4) NOT NULL, 
+	[description]			Text (100) NOT NULL
+);
+
+CREATE TABLE [region_lookup]
+ (
+	[region_id]			Long Integer NOT NULL, 
+	[description]			Text (100) NOT NULL
+);
+
+CREATE TABLE [dmerc_region_lookup]
+ (
+	[region_id]			Long Integer NOT NULL, 
+	[description]			Text (100), 
+	[psc_description]			Text (20), 
+	[mac_description]			Text (20), 
+	[super_mac_description]			Text (50)
+);
+
+CREATE TABLE [contractor_type_lookup]
+ (
+	[contractor_type_id]			Long Integer NOT NULL, 
+	[description]			Text (100) NOT NULL
+);
+
+CREATE TABLE [state_x_region]
+ (
+	[state_id]			Long Integer NOT NULL, 
+	[region_id]			Long Integer
+);
+
+CREATE TABLE [contractor_subtype_lookup]
+ (
+	[contractor_subtype_id]			Long Integer NOT NULL, 
+	[description]			Text (100) NOT NULL
+);
+
+CREATE TABLE [contractor]
+ (
+	[contractor_id]			Long Integer NOT NULL, 
+	[contractor_type_id]			Long Integer NOT NULL, 
+	[contractor_version]			Long Integer NOT NULL, 
+	[contractor_bus_name]			Text (100) NOT NULL, 
+	[contractor_number]			Text (20) NOT NULL, 
+	[dmerc_rgn]			Long Integer, 
+	[address1]			Text (50) NOT NULL, 
+	[address2]			Text (50), 
+	[address3]			Text (50), 
+	[city]			Text (30) NOT NULL, 
+	[state_id]			Long Integer, 
+	[zipcode]			Text (10) NOT NULL, 
+	[phone]			Text (10) NOT NULL, 
+	[fax]			Text (10), 
+	[status]			Text (1) NOT NULL, 
+	[last_updated]			DateTime NOT NULL, 
+	[url]			Memo/Hyperlink (255), 
+	[email]			Text (150), 
+	[ignore]			Text (1), 
+	[status_flag]			Text (1), 
+	[cmd_name]			Text (100), 
+	[cmd_title]			Text (50), 
+	[contractor_subtype_id]			Long Integer NOT NULL
+);
+
+CREATE TABLE [contractor_jurisdiction]
+ (
+	[contractor_id]			Long Integer NOT NULL, 
+	[contractor_type_id]			Long Integer NOT NULL, 
+	[contractor_version]			Long Integer NOT NULL, 
+	[state_id]			Long Integer NOT NULL, 
+	[last_updated]			DateTime NOT NULL, 
+	[active_date]			DateTime, 
+	[term_date]			DateTime
+);
+
+CREATE TABLE [contractor_oversight]
+ (
+	[contractor_id]			Long Integer NOT NULL, 
+	[contractor_type_id]			Long Integer NOT NULL, 
+	[contractor_version]			Long Integer NOT NULL, 
+	[region_id]			Long Integer NOT NULL, 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [draft_contact_lookup]
+ (
+	[contact_id]			Long Integer NOT NULL, 
+	[email_address]			Text (200) NOT NULL, 
+	[first_name]			Text (50) NOT NULL, 
+	[middle_initial]			Text (1), 
+	[last_name]			Text (50) NOT NULL, 
+	[phone]			Text (20) NOT NULL, 
+	[address1]			Text (50) NOT NULL, 
+	[address2]			Text (50), 
+	[address3]			Text (50), 
+	[city]			Text (30) NOT NULL, 
+	[state_id]			Long Integer NOT NULL, 
+	[zipcode]			Text (10) NOT NULL, 
+	[last_updated]			DateTime NOT NULL, 
+	[p_ext]			Text (5)
+);
+
+CREATE TABLE [reason_change_lookup]
+ (
+	[reason_change_id]			Long Integer NOT NULL, 
+	[reason_change_version]			Long Integer NOT NULL, 
+	[description]			Text (100) NOT NULL, 
+	[last_updated]			DateTime NOT NULL, 
+	[sort_order]			Long Integer
+);
+
+CREATE TABLE [lcd_url_type_lookup]
+ (
+	[url_type_id]			Long Integer NOT NULL, 
+	[description]			Text (250) NOT NULL, 
+	[sort_order]			Long Integer NOT NULL, 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [lcd_future_retire]
+ (
+	[lcd_id]			Long Integer NOT NULL, 
+	[retire_dt]			DateTime NOT NULL
+);
+
+CREATE TABLE [lcd_related_documents]
+ (
+	[lcd_id]			Long Integer NOT NULL, 
+	[lcd_version]			Long Integer NOT NULL, 
+	[related_num]			Long Integer NOT NULL, 
+	[r_article_id]			Long Integer, 
+	[r_article_version]			Long Integer, 
+	[r_lcd_id]			Long Integer, 
+	[r_lcd_version]			Long Integer, 
+	[r_contractor_id]			Long Integer, 
+	[last_updated]			DateTime
+);
+
+CREATE TABLE [lcd_related_source_icd9]
+ (
+	[lcd_id]			Long Integer NOT NULL, 
+	[lcd_version]			Long Integer NOT NULL, 
+	[related_num]			Long Integer NOT NULL, 
+	[source_lcd_id]			Long Integer, 
+	[last_updated]			DateTime
+);
+
+CREATE TABLE [lcd_related_ncd_documents]
+ (
+	[lcd_id]			Long Integer NOT NULL, 
+	[lcd_version]			Long Integer NOT NULL, 
+	[related_num]			Long Integer NOT NULL, 
+	[r_ncd_id]			Long Integer, 
+	[r_ncd_version]			Long Integer, 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [synopsis_changes_fields_lookup]
+ (
+	[synopsis_changes_field_id]			Long Integer NOT NULL, 
+	[field_name]			Text (100) NOT NULL, 
+	[field_anchor]			Text (100) NOT NULL, 
+	[mcd_field_name]			Text (100) NOT NULL, 
+	[mcd_field_anchor]			Text (100) NOT NULL
+);
+
+CREATE TABLE [lcd]
+ (
+	[lcd_id]			Long Integer NOT NULL, 
+	[lcd_version]			Long Integer NOT NULL, 
+	[display_id]			Long Integer, 
+	[title]			Text (255) NOT NULL, 
+	[determination_number]			Text (40), 
+	[cms_cov_policy]			Memo/Hyperlink (255), 
+	[orig_det_eff_date]			DateTime, 
+	[ent_det_end_date]			DateTime, 
+	[rev_eff_date]			DateTime, 
+	[rev_end_date]			DateTime, 
+	[indication]			Memo/Hyperlink (255), 
+	[diagnoses_support]			Memo/Hyperlink (255), 
+	[icd9_dont_support_para]			Memo/Hyperlink (255), 
+	[icd9_dont_support_ast]			Memo/Hyperlink (255), 
+	[diagnoses_dont_support]			Memo/Hyperlink (255), 
+	[coding_guidelines]			Memo/Hyperlink (255), 
+	[doc_reqs]			Memo/Hyperlink (255), 
+	[appendices]			Memo/Hyperlink (255), 
+	[util_guide]			Memo/Hyperlink (255), 
+	[source_info]			Memo/Hyperlink (255), 
+	[adv_meeting]			Memo/Hyperlink (255), 
+	[comment_start_dt]			DateTime, 
+	[comment_end_dt]			DateTime, 
+	[notice_start_dt]			DateTime, 
+	[rev_hist_num]			Memo/Hyperlink (255), 
+	[history_exp]			Memo/Hyperlink (255), 
+	[last_reviewed_on]			DateTime, 
+	[thirty_percent]			Text (1) NOT NULL, 
+	[status]			Text (1) NOT NULL, 
+	[last_updated]			DateTime NOT NULL, 
+	[draft_contact]			Long Integer, 
+	[revenue_para]			Memo/Hyperlink (255), 
+	[source_lcd_id]			Long Integer, 
+	[add_icd10_info]			Memo/Hyperlink (255), 
+	[keywords]			Memo/Hyperlink (255), 
+	[associated_info]			Memo/Hyperlink (255), 
+	[notice_end_dt]			DateTime, 
+	[date_retired]			DateTime, 
+	[draft_released_date]			DateTime, 
+	[icd10_doc]			Text (1) NOT NULL, 
+	[synopsis_changes]			Memo/Hyperlink (255), 
+	[bibliography]			Memo/Hyperlink (255), 
+	[summary_of_evidence]			Memo/Hyperlink (255), 
+	[analysis_of_evidence]			Memo/Hyperlink (255), 
+	[mcd_publish_date]			DateTime, 
+	[issue]			Memo/Hyperlink (255), 
+	[issue_change]			Memo/Hyperlink (255), 
+	[mac_initiated]			Text (1) NOT NULL
+);
+
+CREATE TABLE [lcd_x_contractor]
+ (
+	[lcd_id]			Long Integer NOT NULL, 
+	[lcd_version]			Long Integer NOT NULL, 
+	[contractor_id]			Long Integer NOT NULL, 
+	[contractor_type_id]			Long Integer NOT NULL, 
+	[contractor_version]			Long Integer NOT NULL, 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [lcd_x_hcpc_code_group]
+ (
+	[lcd_id]			Long Integer NOT NULL, 
+	[lcd_version]			Long Integer NOT NULL, 
+	[hcpc_code_group]			Long Integer NOT NULL, 
+	[paragraph]			Memo/Hyperlink (255), 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [lcd_x_hcpc_code]
+ (
+	[lcd_id]			Long Integer NOT NULL, 
+	[lcd_version]			Long Integer NOT NULL, 
+	[hcpc_code_id]			Text (5) NOT NULL, 
+	[hcpc_code_version]			Long Integer NOT NULL, 
+	[hcpc_code_group]			Long Integer NOT NULL, 
+	[long_description]			Memo/Hyperlink (255) NOT NULL, 
+	[short_description]			Text (50) NOT NULL, 
+	[last_updated]			DateTime NOT NULL, 
+	[range]			Text (1) NOT NULL
+);
+
+CREATE TABLE [lcd_x_primary_jurisdiction]
+ (
+	[lcd_id]			Long Integer NOT NULL, 
+	[lcd_version]			Long Integer NOT NULL, 
+	[state_id]			Long Integer NOT NULL, 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [lcd_x_reason_change]
+ (
+	[lcd_id]			Long Integer NOT NULL, 
+	[lcd_version]			Long Integer NOT NULL, 
+	[reason_change_id]			Long Integer NOT NULL, 
+	[reason_change_version]			Long Integer NOT NULL, 
+	[last_updated]			DateTime NOT NULL, 
+	[reason_change_other]			Memo/Hyperlink (255)
+);
+
+CREATE TABLE [lcd_x_revision_history]
+ (
+	[lcd_id]			Long Integer NOT NULL, 
+	[lcd_version]			Long Integer NOT NULL, 
+	[rev_hist_num]			Long Integer NOT NULL, 
+	[rev_hist_date]			DateTime NOT NULL, 
+	[rev_hist_exp]			Memo/Hyperlink (255) NOT NULL, 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [lcd_x_sticky_note]
+ (
+	[lcd_id]			Long Integer NOT NULL, 
+	[lcd_version]			Long Integer NOT NULL, 
+	[sticky_note_version]			Long Integer NOT NULL, 
+	[sticky_note]			Memo/Hyperlink (255), 
+	[sticky_note_dt]			DateTime, 
+	[sticky_note_posting_dt]			DateTime
+);
+
+CREATE TABLE [lcd_x_urls]
+ (
+	[lcd_id]			Long Integer NOT NULL, 
+	[lcd_version]			Long Integer NOT NULL, 
+	[url_type_id]			Long Integer NOT NULL, 
+	[url_id]			Long Integer NOT NULL, 
+	[url]			Memo/Hyperlink (255) NOT NULL, 
+	[url_name]			Memo/Hyperlink (255) NOT NULL, 
+	[sort_order]			Long Integer NOT NULL, 
+	[last_updated]			DateTime NOT NULL, 
+	[url_description]			Memo/Hyperlink (255) NOT NULL
+);
+
+CREATE TABLE [lcd_x_advisory_committee]
+ (
+	[lcd_id]			Long Integer NOT NULL, 
+	[lcd_version]			Long Integer NOT NULL, 
+	[meeting_id]			Long Integer NOT NULL, 
+	[meeting_date]			DateTime NOT NULL, 
+	[meeting_info]			Memo/Hyperlink (255) NOT NULL, 
+	[sort_order]			Long Integer NOT NULL, 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [lcd_x_synopsis_changes_fields]
+ (
+	[lcd_id]			Long Integer NOT NULL, 
+	[lcd_version]			Long Integer NOT NULL, 
+	[synopsis_changes_field_id]			Long Integer NOT NULL, 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [lcd_x_requestor_letters]
+ (
+	[lcd_id]			Long Integer NOT NULL, 
+	[lcd_version]			Long Integer NOT NULL, 
+	[letter_id]			Long Integer NOT NULL, 
+	[requestor_name]			Memo/Hyperlink (255) NOT NULL, 
+	[letter_path]			Memo/Hyperlink (255) NOT NULL, 
+	[size]			Long Integer NOT NULL, 
+	[sort_order]			Long Integer NOT NULL, 
+	[last_updated]			DateTime NOT NULL
+);
+
+================================ncd
+
+(faiss_gpu1) (base) udonsi-kalu@dell:/media/udonsi-kalu/New Volume/denials/denials/faiss_input$ mdb-schema "/media/udonsi-kalu/New Volume/denials/cms/manuals/all_data/ncd/ncd.mdb"
+-- ----------------------------------------------------------
+-- MDB Tools - A library for reading MS Access database files
+-- Copyright (C) 2000-2011 Brian Bruns and others.
+-- Files in libmdb are licensed under LGPL and the utilities under
+-- the GPL, see COPYING.LIB and COPYING files respectively.
+-- Check out http://mdbtools.sourceforge.net
+-- ----------------------------------------------------------
+
+-- That file uses encoding UTF-8
+
+CREATE TABLE [NCD_PBLCTN_REF]
+ (
+	[pblctn_cd]			Long Integer NOT NULL, 
+	[pblctn_num]			Text (6) NOT NULL, 
+	[pblctn_title]			Text (150) NOT NULL
+);
+
+CREATE TABLE [NCD_BNFT_CTGRY_REF]
+ (
+	[bnft_ctgry_cd]			Long Integer NOT NULL, 
+	[bnft_ctgry_desc]			Text (100) NOT NULL
+);
+
+CREATE TABLE [ncd_trkg]
+ (
+	[NCD_id]			Long Integer NOT NULL, 
+	[NCD_vrsn_num]			Long Integer NOT NULL, 
+	[natl_cvrg_type]			Boolean NOT NULL, 
+	[cvrg_lvl_cd]			Integer NOT NULL, 
+	[NCD_mnl_sect]			Text (15) NOT NULL, 
+	[NCD_mnl_sect_title]			Text (250) NOT NULL, 
+	[NCD_efctv_dt]			DateTime NOT NULL, 
+	[NCD_impltn_dt]			DateTime, 
+	[NCD_trmntn_dt]			DateTime, 
+	[itm_srvc_desc]			Memo/Hyperlink (255), 
+	[indctn_lmtn]			Memo/Hyperlink (255) NOT NULL, 
+	[xref_txt]			Memo/Hyperlink (255), 
+	[othr_txt]			Memo/Hyperlink (255), 
+	[trnsmtl_num]			Text (20), 
+	[trnsmtl_issnc_dt]			DateTime, 
+	[trnsmtl_url]			Memo/Hyperlink (255), 
+	[chg_rqst_num]			Text (20), 
+	[pblctn_cd]			Long Integer NOT NULL, 
+	[rev_hstry]			Memo/Hyperlink (255), 
+	[under_rvw]			Boolean NOT NULL, 
+	[creatd_tmstmp]			DateTime NOT NULL, 
+	[last_updt_tmstmp]			DateTime NOT NULL, 
+	[last_clrnc_tmstmp]			DateTime, 
+	[NCD_lab]			Boolean NOT NULL, 
+	[ncd_keyword]			Memo/Hyperlink (255), 
+	[NCD_AMA]			Boolean NOT NULL
+);
+
+CREATE TABLE [ncd_trkg_bnft_xref]
+ (
+	[NCD_id]			Long Integer NOT NULL, 
+	[NCD_vrsn_num]			Long Integer NOT NULL, 
+	[bnft_ctgry_cd]			Long Integer NOT NULL, 
+	[creatd_tmstmp]			DateTime NOT NULL, 
+	[last_updt_tmstmp]			DateTime NOT NULL
+);
+
+
+(faiss_gpu1) (base) udonsi-kalu@dell:/media/udonsi-kalu/New Volume/denials/denials/faiss_input$ 
+
+============================================articles
+
+(faiss_gpu1) (base) udonsi-kalu@dell:/media/udonsi-kalu/New Volume/denials/denials/faiss_input$ mdb-schema "/media/udonsi-kalu/New Volume/denials/cms/manuals/all_data/all_article/all_article.mdb"
+-- ----------------------------------------------------------
+-- MDB Tools - A library for reading MS Access database files
+-- Copyright (C) 2000-2011 Brian Bruns and others.
+-- Files in libmdb are licensed under LGPL and the utilities under
+-- the GPL, see COPYING.LIB and COPYING files respectively.
+-- Check out http://mdbtools.sourceforge.net
+-- ----------------------------------------------------------
+
+-- That file uses encoding UTF-8
+
+CREATE TABLE [update_period]
+ (
+	[period_id]			Long Integer NOT NULL, 
+	[begin_date]			DateTime NOT NULL, 
+	[end_date]			DateTime NOT NULL
+);
+
+CREATE TABLE [state_lookup]
+ (
+	[state_id]			Long Integer NOT NULL, 
+	[state_abbrev]			Text (4) NOT NULL, 
+	[description]			Text (100) NOT NULL
+);
+
+CREATE TABLE [region_lookup]
+ (
+	[region_id]			Long Integer NOT NULL, 
+	[description]			Text (100) NOT NULL
+);
+
+CREATE TABLE [dmerc_region_lookup]
+ (
+	[region_id]			Long Integer NOT NULL, 
+	[description]			Text (100), 
+	[psc_description]			Text (20), 
+	[mac_description]			Text (20), 
+	[super_mac_description]			Text (50)
+);
+
+CREATE TABLE [contractor_type_lookup]
+ (
+	[contractor_type_id]			Long Integer NOT NULL, 
+	[description]			Text (100) NOT NULL
+);
+
+CREATE TABLE [state_x_region]
+ (
+	[state_id]			Long Integer NOT NULL, 
+	[region_id]			Long Integer
+);
+
+CREATE TABLE [contractor_subtype_lookup]
+ (
+	[contractor_subtype_id]			Long Integer NOT NULL, 
+	[description]			Text (100) NOT NULL
+);
+
+CREATE TABLE [contractor]
+ (
+	[contractor_id]			Long Integer NOT NULL, 
+	[contractor_type_id]			Long Integer NOT NULL, 
+	[contractor_version]			Long Integer NOT NULL, 
+	[contractor_bus_name]			Text (100) NOT NULL, 
+	[contractor_number]			Text (20) NOT NULL, 
+	[dmerc_rgn]			Long Integer, 
+	[address1]			Text (50) NOT NULL, 
+	[address2]			Text (50), 
+	[address3]			Text (50), 
+	[city]			Text (30) NOT NULL, 
+	[state_id]			Long Integer, 
+	[zipcode]			Text (10) NOT NULL, 
+	[phone]			Text (10) NOT NULL, 
+	[fax]			Text (10), 
+	[status]			Text (1) NOT NULL, 
+	[last_updated]			DateTime NOT NULL, 
+	[url]			Memo/Hyperlink (255), 
+	[email]			Text (150), 
+	[ignore]			Text (1), 
+	[status_flag]			Text (1), 
+	[cmd_name]			Text (100), 
+	[cmd_title]			Text (50), 
+	[contractor_subtype_id]			Long Integer NOT NULL
+);
+
+CREATE TABLE [contractor_jurisdiction]
+ (
+	[contractor_id]			Long Integer NOT NULL, 
+	[contractor_type_id]			Long Integer NOT NULL, 
+	[contractor_version]			Long Integer NOT NULL, 
+	[state_id]			Long Integer NOT NULL, 
+	[last_updated]			DateTime NOT NULL, 
+	[active_date]			DateTime, 
+	[term_date]			DateTime
+);
+
+CREATE TABLE [contractor_oversight]
+ (
+	[contractor_id]			Long Integer NOT NULL, 
+	[contractor_type_id]			Long Integer NOT NULL, 
+	[contractor_version]			Long Integer NOT NULL, 
+	[region_id]			Long Integer NOT NULL, 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [article_type_lookup]
+ (
+	[article_type_id]			Long Integer NOT NULL, 
+	[description]			Text (250) NOT NULL, 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [article_url_type_lookup]
+ (
+	[url_type_id]			Long Integer NOT NULL, 
+	[description]			Text (250) NOT NULL, 
+	[sort_order]			Long Integer NOT NULL, 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [article_future_retire]
+ (
+	[article_id]			Long Integer NOT NULL, 
+	[retire_dt]			DateTime NOT NULL
+);
+
+CREATE TABLE [article_related_documents]
+ (
+	[article_id]			Long Integer NOT NULL, 
+	[article_version]			Long Integer NOT NULL, 
+	[related_num]			Long Integer NOT NULL, 
+	[r_article_id]			Long Integer, 
+	[r_article_version]			Long Integer, 
+	[r_lcd_id]			Long Integer, 
+	[r_lcd_version]			Long Integer, 
+	[r_contractor_id]			Long Integer, 
+	[last_updated]			DateTime
+);
+
+CREATE TABLE [article_related_ncd_documents]
+ (
+	[article_id]			Long Integer NOT NULL, 
+	[article_version]			Long Integer NOT NULL, 
+	[related_num]			Long Integer NOT NULL, 
+	[r_ncd_id]			Long Integer, 
+	[r_ncd_version]			Long Integer, 
+	[last_updated]			DateTime
+);
+
+CREATE TABLE [article_related_source_icd9]
+ (
+	[article_id]			Long Integer NOT NULL, 
+	[article_version]			Long Integer NOT NULL, 
+	[related_num]			Long Integer NOT NULL, 
+	[source_article_id]			Long Integer, 
+	[last_updated]			DateTime
+);
+
+CREATE TABLE [article]
+ (
+	[article_id]			Long Integer NOT NULL, 
+	[article_version]			Long Integer NOT NULL, 
+	[article_type]			Long Integer NOT NULL, 
+	[title]			Text (255) NOT NULL, 
+	[article_pub_date]			DateTime, 
+	[article_eff_date]			DateTime, 
+	[article_end_date]			DateTime, 
+	[description]			Memo/Hyperlink (255) NOT NULL, 
+	[other_comments]			Memo/Hyperlink (255), 
+	[sad_url]			Memo/Hyperlink (255), 
+	[thirty_percent]			Text (1) NOT NULL, 
+	[status]			Text (1) NOT NULL, 
+	[last_updated]			DateTime NOT NULL, 
+	[history_exp]			Memo/Hyperlink (255), 
+	[key_article]			Text (1), 
+	[icd9_covered_para]			Memo/Hyperlink (255), 
+	[icd9_noncovered_para]			Memo/Hyperlink (255), 
+	[revenue_para]			Memo/Hyperlink (255), 
+	[article_rev_end_date]			DateTime, 
+	[source_article_id]			Long Integer, 
+	[date_retired]			DateTime, 
+	[keywords]			Memo/Hyperlink (255), 
+	[icd10_doc]			Text (1) NOT NULL, 
+	[add_icd10_info]			Memo/Hyperlink (255), 
+	[cms_cov_policy]			Memo/Hyperlink (255), 
+	[display_id]			Long Integer, 
+	[reference_article]			Text (2) NOT NULL
+);
+
+CREATE TABLE [article_x_bill_code]
+ (
+	[article_id]			Long Integer NOT NULL, 
+	[article_version]			Long Integer NOT NULL, 
+	[bill_code_id]			Long Integer NOT NULL, 
+	[bill_code_version]			Long Integer NOT NULL, 
+	[description]			Text (250) NOT NULL, 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [article_x_contractor]
+ (
+	[article_id]			Long Integer NOT NULL, 
+	[article_version]			Long Integer NOT NULL, 
+	[article_type]			Long Integer NOT NULL, 
+	[contractor_id]			Long Integer NOT NULL, 
+	[contractor_type_id]			Long Integer NOT NULL, 
+	[contractor_version]			Long Integer NOT NULL, 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [article_x_hcpc_code_group]
+ (
+	[article_id]			Long Integer NOT NULL, 
+	[article_version]			Long Integer NOT NULL, 
+	[hcpc_code_group]			Long Integer NOT NULL, 
+	[paragraph]			Memo/Hyperlink (255), 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [article_x_hcpc_code]
+ (
+	[article_id]			Long Integer NOT NULL, 
+	[article_version]			Long Integer NOT NULL, 
+	[hcpc_code_id]			Text (5) NOT NULL, 
+	[hcpc_code_version]			Long Integer NOT NULL, 
+	[hcpc_code_group]			Long Integer NOT NULL, 
+	[long_description]			Memo/Hyperlink (255) NOT NULL, 
+	[short_description]			Text (50) NOT NULL, 
+	[range]			Text (1) NOT NULL, 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [article_x_hcpc_modifier_group]
+ (
+	[article_id]			Long Integer NOT NULL, 
+	[article_version]			Long Integer NOT NULL, 
+	[hcpc_modifier_group]			Long Integer NOT NULL, 
+	[paragraph]			Memo/Hyperlink (255), 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [article_x_hcpc_modifier]
+ (
+	[article_id]			Long Integer NOT NULL, 
+	[article_version]			Long Integer NOT NULL, 
+	[hcpc_modifier_code_id]			Text (2) NOT NULL, 
+	[hcpc_modifier_code_version]			Long Integer NOT NULL, 
+	[hcpc_modifier_group]			Long Integer NOT NULL, 
+	[description]			Memo/Hyperlink (255) NOT NULL, 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [article_x_other_coding_group]
+ (
+	[article_id]			Long Integer NOT NULL, 
+	[article_version]			Long Integer NOT NULL, 
+	[other_coding_group]			Long Integer NOT NULL, 
+	[paragraph]			Memo/Hyperlink (255), 
+	[codes]			Memo/Hyperlink (255), 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [article_x_primary_jurisdiction]
+ (
+	[article_id]			Long Integer NOT NULL, 
+	[article_version]			Long Integer NOT NULL, 
+	[state_id]			Long Integer NOT NULL, 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [article_x_revenue_code]
+ (
+	[article_id]			Long Integer NOT NULL, 
+	[article_version]			Long Integer NOT NULL, 
+	[revenue_code_id]			Text (5) NOT NULL, 
+	[revenue_code_version]			Long Integer NOT NULL, 
+	[description]			Memo/Hyperlink (255) NOT NULL, 
+	[range]			Text (1) NOT NULL, 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [article_x_code_table]
+ (
+	[article_id]			Long Integer NOT NULL, 
+	[article_version]			Long Integer NOT NULL, 
+	[article_type]			Long Integer NOT NULL, 
+	[code_table_row]			Long Integer NOT NULL, 
+	[brand_name]			Memo/Hyperlink (255), 
+	[eff_date]			DateTime, 
+	[end_date]			DateTime, 
+	[comments]			Memo/Hyperlink (255), 
+	[hcpc_code_id]			Text (5), 
+	[hcpc_code_version]			Long Integer, 
+	[long_description]			Memo/Hyperlink (255) NOT NULL, 
+	[short_description]			Text (50) NOT NULL, 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [article_x_icd10_covered_group]
+ (
+	[article_id]			Long Integer NOT NULL, 
+	[article_version]			Long Integer NOT NULL, 
+	[icd10_covered_group]			Long Integer NOT NULL, 
+	[paragraph]			Memo/Hyperlink (255), 
+	[last_updated]			DateTime NOT NULL, 
+	[icd10_covered_ast]			Memo/Hyperlink (255)
+);
+
+CREATE TABLE [article_x_icd10_covered]
+ (
+	[article_id]			Long Integer NOT NULL, 
+	[article_version]			Long Integer NOT NULL, 
+	[icd10_code_id]			Text (8) NOT NULL, 
+	[icd10_code_version]			Long Integer NOT NULL, 
+	[icd10_covered_group]			Long Integer NOT NULL, 
+	[range]			Text (1) NOT NULL, 
+	[sort_order]			Long Integer NOT NULL, 
+	[description]			Memo/Hyperlink (255) NOT NULL, 
+	[last_updated]			DateTime NOT NULL, 
+	[asterisk]			Text (1) NOT NULL
+);
+
+CREATE TABLE [article_x_icd10_noncovered_group]
+ (
+	[article_id]			Long Integer NOT NULL, 
+	[article_version]			Long Integer NOT NULL, 
+	[icd10_noncovered_group]			Long Integer NOT NULL, 
+	[paragraph]			Memo/Hyperlink (255), 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [article_x_icd10_noncovered]
+ (
+	[article_id]			Long Integer NOT NULL, 
+	[article_version]			Long Integer NOT NULL, 
+	[icd10_code_id]			Text (8) NOT NULL, 
+	[icd10_code_version]			Long Integer NOT NULL, 
+	[icd10_noncovered_group]			Long Integer NOT NULL, 
+	[range]			Text (1) NOT NULL, 
+	[sort_order]			Long Integer NOT NULL, 
+	[description]			Memo/Hyperlink (255) NOT NULL, 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [article_x_icd10_pcs_code_group]
+ (
+	[article_id]			Long Integer NOT NULL, 
+	[article_version]			Long Integer NOT NULL, 
+	[icd10_pcs_code_group]			Long Integer NOT NULL, 
+	[paragraph]			Memo/Hyperlink (255), 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [article_x_icd10_pcs_code]
+ (
+	[article_id]			Long Integer NOT NULL, 
+	[article_version]			Long Integer NOT NULL, 
+	[icd10_pcs_code_id]			Text (8) NOT NULL, 
+	[icd10_pcs_code_version]			Long Integer NOT NULL, 
+	[icd10_pcs_code_group]			Long Integer NOT NULL, 
+	[range]			Text (1) NOT NULL, 
+	[sort_order]			Long Integer NOT NULL, 
+	[description]			Memo/Hyperlink (255) NOT NULL, 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [article_x_revision_history]
+ (
+	[article_id]			Long Integer NOT NULL, 
+	[article_version]			Long Integer NOT NULL, 
+	[rev_hist_num]			Long Integer NOT NULL, 
+	[rev_hist_date]			DateTime NOT NULL, 
+	[rev_hist_exp]			Memo/Hyperlink (255) NOT NULL, 
+	[last_updated]			DateTime NOT NULL
+);
+
+CREATE TABLE [article_x_sticky_note]
+ (
+	[article_id]			Long Integer NOT NULL, 
+	[article_version]			Long Integer NOT NULL, 
+	[sticky_note_version]			Long Integer NOT NULL, 
+	[sticky_note]			Memo/Hyperlink (255), 
+	[sticky_note_dt]			DateTime, 
+	[sticky_note_posting_dt]			DateTime
+);
+
+CREATE TABLE [article_x_urls]
+ (
+	[article_id]			Long Integer NOT NULL, 
+	[article_version]			Long Integer NOT NULL, 
+	[url_type_id]			Long Integer NOT NULL, 
+	[url_id]			Long Integer NOT NULL, 
+	[url]			Memo/Hyperlink (255) NOT NULL, 
+	[url_name]			Memo/Hyperlink (255) NOT NULL, 
+	[sort_order]			Long Integer NOT NULL, 
+	[last_updated]			DateTime NOT NULL, 
+	[url_description]			Memo/Hyperlink (255) NOT NULL
+);
+
+CREATE TABLE [article_x_response_to_comment]
+ (
+	[article_id]			Long Integer NOT NULL, 
+	[article_version]			Long Integer NOT NULL, 
+	[rtc_num]			Long Integer NOT NULL, 
+	[comment]			Memo/Hyperlink (255), 
+	[response]			Memo/Hyperlink (255), 
+	[last_updated]			DateTime NOT NULL
+);
+
+
+(faiss_gpu1) (base) udonsi-kalu@dell:/media/udonsi-kalu/New Volume/denials/denials/faiss_input$ 
+
+
+************************************************************************************************
+1. Policy-to-Code Mapping (Upgraded)
+WITH active_policies AS (
+    SELECT 'LCD' AS type, lcd_id AS id, title, orig_det_eff_date, ent_det_end_date 
+    FROM lcd WHERE status = 'A'
+    UNION ALL
+    SELECT 'NCD', NCD_id, NCD_mnl_sect_title, NCD_efctv_dt, NCD_trmntn_dt
+    FROM ncd_trkg WHERE GETDATE() BETWEEN NCD_efctv_dt AND COALESCE(NCD_trmntn_dt, '9999-12-31')
+    UNION ALL
+    SELECT 'ARTICLE', article_id, title, article_eff_date, article_end_date
+    FROM article WHERE status = 'A'
+)
+
+SELECT 
+    p.type, p.id, p.title,
+    c.hcpc_code_id AS cpt_code,  -- Renamed for clarity
+    c.long_description AS cpt_description,
+    icd.icd10_code_id,
+    icd.description AS icd_description,
+    m.mue_value
+FROM active_policies p
+LEFT JOIN lcd_x_hcpc_code c ON p.type = 'LCD' AND p.id = c.lcd_id
+LEFT JOIN article_x_icd10_covered icd ON p.id = icd.article_id
+LEFT JOIN mue_facility m ON c.hcpc_code_id = m.hcpcs;
+
+
+
+Create a Lightweight Integrated View
+
+CREATE VIEW vw_code_pairs AS
+SELECT 
+    cpt_code,
+    cpt_description,
+    icd10_code_id AS paired_icd,
+    FIRST_VALUE(icd_description) OVER (
+        PARTITION BY cpt_code 
+        ORDER BY 
+            CASE WHEN mue_value IS NULL THEN 0 ELSE 1 END
+    ) AS icd_description,
+    COUNT(*) OVER (PARTITION BY cpt_code) AS coverage_rules_count
+FROM policy_to_code_mapping_enhanced;
+
+************************************************************************
+2. Jurisdictional Coverage (Enhanced)
+
+SELECT 
+    l.lcd_id, l.title,
+    c.contractor_bus_name AS mac_name,
+    s.state_abbrev,
+    STRING_AGG(hc.hcpc_code_id, ', ') AS covered_codes,
+    -- New: Add NCCI edit awareness
+    COUNT(DISTINCT ptp.column2_code) AS bundled_procedures_count,
+    -- New: Add MUE awareness
+    SUM(CASE WHEN m.mue_value IS NOT NULL THEN 1 ELSE 0 END) AS mue_restricted_codes
+FROM lcd l
+JOIN lcd_x_contractor lxc ON l.lcd_id = lxc.lcd_id
+JOIN contractor c ON lxc.contractor_id = c.contractor_id
+JOIN contractor_jurisdiction cj ON c.contractor_id = cj.contractor_id
+JOIN state_lookup s ON cj.state_id = s.state_id
+LEFT JOIN lcd_x_hcpc_code hc ON l.lcd_id = hc.lcd_id
+-- New joins
+LEFT JOIN hospital_ptp_edits ptp ON 
+    hc.hcpc_code_id = ptp.column1_code AND
+    GETDATE() BETWEEN ptp.effective_date AND COALESCE(ptp.termination_date, '9999-12-31')
+LEFT JOIN mue_facility m ON 
+    hc.hcpc_code_id = m.hcpcs AND
+    GETDATE() >= m.effective_date
+WHERE l.status = 'A'
+GROUP BY l.lcd_id, l.title, c.contractor_bus_name, s.state_abbrev
+
+**************************************************************************
+3. Documentation Requirements (Modernized)
+SELECT 
+    COALESCE(l.lcd_id, a.article_id) AS source_id,
+    COALESCE(l.doc_reqs, a.cms_cov_policy) AS requirements,
+    lxc.contractor_id,
+    ct.description AS contractor_type,
+    -- New: Structured documentation elements
+    JSON_OBJECT(
+        'forms', CASE 
+            WHEN a.keywords LIKE '%CMN%' THEN 'CMS-847'
+            WHEN a.keywords LIKE '%DIF%' THEN 'CMS-10126'
+            ELSE NULL
+        END,
+        'sections', CASE
+            WHEN l.doc_reqs LIKE '%progress notes%' THEN 'Clinical Notes'
+            WHEN l.doc_reqs LIKE '%test results%' THEN 'Lab Reports'
+            ELSE NULL
+        END
+    ) AS structured_requirements,
+    -- New: FAISS search key
+    CONCAT(
+        COALESCE(l.title, a.title), ' ', 
+        COALESCE(l.doc_reqs, a.cms_cov_policy)
+    ) AS faiss_search_text
+FROM lcd l
+FULL OUTER JOIN article a ON a.article_type IN (
+    SELECT article_type_id FROM article_type_lookup 
+    WHERE description IN ('NCD', 'B&C Article', 'CAL'))
+LEFT JOIN lcd_x_contractor lxc ON l.lcd_id = lxc.lcd_id
+LEFT JOIN contractor_type_lookup ct ON lxc.contractor_type_id = ct.contractor_type_id
+WHERE (l.doc_reqs IS NOT NULL OR a.cms_cov_policy IS NOT NULL)
+AND (l.status = 'A' OR a.status = 'A')
+
+miscallaneous
+========================================Enhanced Policy-to-Code Mapping query 
+
+WITH active_policies AS (
+    SELECT 'LCD' AS type, lcd_id AS id, title, orig_det_eff_date, ent_det_end_date 
+    FROM lcd WHERE status = 'A'
+    UNION ALL
+    SELECT 'NCD', NCD_id, NCD_mnl_sect_title, NCD_efctv_dt, NCD_trmntn_dt
+    FROM ncd_trkg WHERE GETDATE() BETWEEN NCD_efctv_dt AND COALESCE(NCD_trmntn_dt, '9999-12-31')
+    UNION ALL
+    SELECT 'ARTICLE', article_id, title, article_eff_date, article_end_date
+    FROM article WHERE status = 'A'
+)
+
+SELECT 
+    -- Core Policy Info
+    p.type, 
+    p.id, 
+    p.title,
+    
+    -- Code Info
+    COALESCE(c.hcpc_code_id, m.hcpcs) AS code,
+    CASE 
+        WHEN c.hcpc_code_id IS NOT NULL THEN 'HCPCS'
+        WHEN m.hcpcs IS NOT NULL THEN 'MUE_HCPCS'
+    END AS code_type,
+    c.long_description AS description,
+    m.mue_value,
+    m.mue_type,
+    
+    -- ICD-10 Diagnosis Mapping (NEW)
+    icd.icd10_code_id AS covered_diagnosis,
+    icd.description AS diagnosis_description,
+    
+    -- Documentation Requirements (NEW)
+    CASE 
+        WHEN p.type = 'LCD' THEN l.doc_reqs
+        WHEN p.type = 'ARTICLE' THEN a.cms_cov_policy
+        ELSE NULL 
+    END AS documentation_rules,
+    
+    -- Modifier Rules (NEW)
+    ptp.modifier_allowed AS allowed_modifiers,
+    
+    -- Payer-Specific Variations (NEW)
+    mac.contractor_bus_name AS applicable_mac,
+    STRING_AGG(s.state_abbrev, ', ') AS states
+FROM active_policies p
+-- Original Joins
+LEFT JOIN lcd_x_hcpc_code c ON 
+    p.type = 'LCD' AND 
+    p.id = c.lcd_id AND
+    c.last_updated >= p.orig_det_eff_date
+LEFT JOIN mue_facility m ON 
+    p.type IN ('LCD', 'NCD') AND
+    m.effective_date <= GETDATE()
+    
+-- New ICD-10 Join
+LEFT JOIN (
+    SELECT article_id, icd10_code_id, description 
+    FROM article_x_icd10_covered
+    WHERE GETDATE() BETWEEN effective_date AND COALESCE(end_date, '9999-12-31')
+) icd ON p.id = icd.article_id
+
+-- New Documentation Joins
+LEFT JOIN lcd l ON p.type = 'LCD' AND p.id = l.lcd_id
+LEFT JOIN article a ON p.type = 'ARTICLE' AND p.id = a.article_id
+
+-- New Modifier Join
+LEFT JOIN hospital_ptp_edits ptp ON 
+    c.hcpc_code_id = ptp.column1_code AND
+    GETDATE() BETWEEN ptp.effective_date AND COALESCE(ptp.termination_date, '9999-12-31')
+
+-- New Payer-Specific Joins
+LEFT JOIN lcd_x_contractor lxc ON p.type = 'LCD' AND p.id = lxc.lcd_id
+LEFT JOIN contractor mac ON lxc.contractor_id = mac.contractor_id
+LEFT JOIN contractor_jurisdiction cj ON mac.contractor_id = cj.contractor_id
+LEFT JOIN state_lookup s ON cj.state_id = s.state_id
+
+GROUP BY 
+    p.type, p.id, p.title, 
+    c.hcpc_code_id, c.long_description,
+    m.hcpcs, m.mue_value, m.mue_type,
+    icd.icd10_code_id, icd.description,
+    l.doc_reqs, a.cms_cov_policy,
+    ptp.modifier_allowed,
+    mac.contractor_bus_name;
+
+Key Enhancements:
+
+    ICD-10 Diagnosis Mapping:
+        Links covered procedures to valid diagnosis codes
+        Prevents "diagnosis-procedure mismatch" denials
+
+    Documentation Requirements:
+        Shows required documentation from both LCDs and Articles
+        Helps prevent "insufficient documentation" denials
+
+    Modifier Rules:
+        Identifies when modifiers like -59 are required/allowed
+        Prevents "invalid modifier" denials
+
+    Payer-Specific Variations:
+        Shows which MAC contractors and states each policy applies to
+        Handles regional coverage differences
+
+
+
+
+i need to extract crosswalks: 
+import re
+import pandas as pd
+from pdfminer.high_level import extract_text
+from pathlib import Path
+
+def parse_crosswalk(pdf_path):
+    """Extract policy-to-manual mappings from crosswalk PDFs"""
+    text = extract_text(pdf_path)
+    
+    # Regex for LCD/NCD to manual section mappings
+    patterns = [
+        # LCD L12345 → clm104c20.pdf, Section 5.1
+        r"(LCD L\d+|NCD \d+\.\d+).*?(clm\d+c\d+(?:\.pdf)?[,#]\s*Section\s*\d+\.\d+)",
+        # NCD 110.21 → Chapter 22, Table 3
+        r"(NCD \d+\.\d+).*?(Chapter\s*\d+,\s*Table\s*\d+)"
+    ]
+    
+    records = []
+    for pattern in patterns:
+        matches = re.findall(pattern, text, re.IGNORECASE)
+        for policy_ref, manual_ref in matches:
+            records.append({
+                "policy_id": policy_ref.replace(" ", "_"),
+                "policy_type": "LCD" if "LCD" in policy_ref else "NCD",
+                "manual_reference": manual_ref,
+                "source_file": Path(pdf_path).name
+            })
+    return records
+
+# Process all crosswalk PDFs
+all_crosswalks = []
+for pdf in Path("/path/to/crosswalks").glob("clm*crosswalk.pdf"):
+    all_crosswalks.extend(parse_crosswalk(pdf))
+
+# Convert to DataFrame
+crosswalks_df = pd.DataFrame(all_crosswalks)
+
+# Add hierarchical relationships (LCD → NCD)
+hierarchy = {
+    "LCD_L38945": ["NCD_110.21"],
+    "LCD_L12345": ["NCD_210.1"]
+}
+crosswalks_df["related_policies"] = crosswalks_df["policy_id"].map(hierarchy)
+
+# Save to all formats
+crosswalks_df.to_parquet("crosswalks.parquet")  # For analytics
+crosswalks_df.to_json("crosswalks.json", orient="records", indent=2)  # For APIs
+crosswalks_df.to_csv("crosswalks.csv", index=False)  # For Excel
+
+and ut put this data structure: [
+  {
+    "policy_id": "LCD_L38945",
+    "policy_type": "LCD",
+    "manual_reference": "clm104c20.pdf#Section3.2",
+    "source_file": "clm104c20crosswalk.pdf",
+    "related_policies": ["NCD_110.21"]
+  },
+  {
+    "policy_id": "NCD_110.21",
+    "policy_type": "NCD",
+    "manual_reference": "Chapter 22, Table 5",
+    "source_file": "clm104c21crosswalk.pdf",
+    "related_policies": null
+  }
+]
+to be used in Faiss integration:
+# Add crosswalk metadata when indexing
+for doc in faiss_documents:
+    policy_id = doc.metadata.get("policy_id")
+    if policy_id in crosswalks:
+        doc.metadata["crosswalk_references"] = crosswalks[policy_id]["manual_references"]
+
+        the files are found in (base) udonsi-kalu@dell:/media/udonsi-kalu/New Volume/denials/denials/faiss_input/pdfs/cms_manuals$ ls
+ 99628_clm104c20crosswalk.pdf
+ 99694_clm104c33.pdf
+ clm104c01_0.pdf
+ clm104c01crosswalk.pdf
+ clm104c02crosswalk.pdf
+ clm104c02.pdf
+ clm104c03crosswalk.pdf
+ clm104c03.pdf
+ clm104c04_1.pdf
+ clm104c04.pdf
+ clm104c05crosswalk.pdf
+ clm104c05.pdf
+ clm104c06crosswalk.pdf
+ clm104c06.pdf
+ clm104c07crosswalk.pdf
+ clm104c07.pdf
+ clm104c08crosswalk.pdf
+ clm104c08.pdf
+ clm104c09crosswalk.pdf
+ clm104c09.pdf
+ clm104c10_0.pdf
+ clm104c10crosswalk.pdf
+ clm104c11crosswalk.pdf
+ clm104c11.pdf
+ clm104c12crosswalk.pdf
+ clm104c12.pdf
+ clm104c13crosswalk.pdf
+ clm104c13.pdf
+ clm104c14crosswalk.pdf
+ clm104c14.pdf
+ clm104c15crosswalk.pdf
+ clm104c15.pdf
+ clm104c16crosswalk.pdf
+ clm104c16.pdf
+ clm104c17crosswalk.pdf
+ clm104c17.pdf
+ clm104c18_0.pdf
+ clm104c18crosswalk.pdf
+ clm104c19.pdf
+'clm104c20 .pdf'
+ clm104c21crosswalk.pdf
+ clm104c21_English_Exhibits.zip
+ clm104c21.pdf
+ clm104c21_Spanish_Exhibits.zip
+ clm104c22crosswalk.pdf
+ clm104c22.pdf
+ clm104c23crosswalk.pdf
+ clm104c23.pdf
+ clm104c24crosswalk.pdf
+ clm104c24.pdf
+ clm104c25crosswalk.pdf
+ clm104c25.pdf
+ clm104c26crosswalk.pdf
+ clm104c26.pdf
+ clm104c27.pdf
+ clm104c28crosswalk.pdf
+ clm104c28.pdf
+ clm104c29crosswalk.pdf
+ clm104c29.pdf
+ clm104c30crosswalk.pdf
+ clm104c30.pdf
+ clm104c31crosswalk.pdf
+ clm104c31.pdf
+ clm104c32.pdf
+ clm104c34_0.pdf
+ clm104c35.pdf
+ clm104c36.pdf
+ clm104c37.pdf
+ clm104c38.pdf
+ clm104c39.pdf
