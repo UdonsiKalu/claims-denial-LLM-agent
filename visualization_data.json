@@ -1,0 +1,51 @@
+{
+  "query": "Evaluation and Management coding rules for CPT 99214",
+  "nodes": [
+    {
+      "id": "query",
+      "type": "query",
+      "content": "Evaluation and Management coding rules for CPT 99214",
+      "risk_score": 40
+    },
+    {
+      "id": "doc-0",
+      "type": "document",
+      "content": "A/B MACs (B) use the following evaluation and management codes in establishing edits for\nvisits included in the global package.  CPT codes 99241, 99242, 99243, 99244, 99245, 99251,\n99252, 99253, 99254, 99255, 99271, 99272, 99273, 99274, and 99275 have been transferred\nfrom the excluded category and are now included in the global surgery edits.  \nEvaluation and Management Codes for A/B MAC (B) Edits  \n92012 92014 99211 99212 99213 99214\n99215 99217 99218 99219 99220 99221\n99222 99223 99231 99232 ",
+      "source": "unknown",
+      "page": -1,
+      "similarity": 0.0
+    },
+    {
+      "id": "doc-1",
+      "type": "document",
+      "content": "180.2 – Denial Code\n(Rev. 1578, Issued: 08-15-08, Effective: 01-01-09, Implementation: 01-05-09)  \nPrior to the publication of the new CARC #213, there was no specific code to describe claims\nthat are denied based on a violation of the physician self-referral statute at Section 1877 of the\nAct.  A specific code is appropriate so both the providers of DHS and the industry know that\nclaims are being denied based on the non compliance with the physician self-referral\nprohibitions.  This code should",
+      "source": "unknown",
+      "page": -1,
+      "similarity": 0.0
+    }
+  ],
+  "edges": [
+    {
+      "source": "query",
+      "target": "doc-0",
+      "similarity": 0.0
+    },
+    {
+      "source": "query",
+      "target": "doc-1",
+      "similarity": 0.0
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc-0",
+      "full_content": "A/B MACs (B) use the following evaluation and management codes in establishing edits for\nvisits included in the global package.  CPT codes 99241, 99242, 99243, 99244, 99245, 99251,\n99252, 99253, 99254, 99255, 99271, 99272, 99273, 99274, and 99275 have been transferred\nfrom the excluded category and are now included in the global surgery edits.  \nEvaluation and Management Codes for A/B MAC (B) Edits  \n92012 92014 99211 99212 99213 99214\n99215 99217 99218 99219 99220 99221\n99222 99223 99231 99232 99233 99234\n99235 99236 99238 99239 99241 99242\n99243 99244 99245 99251 99252 99253\n99254 99255 99261 99262 99263 99271\n99272 99273 99274 99275 99291 99292\n99301 99302 99303 99311 99312 99313\n99315 99316 99331 99332 99333 99347\n99348 99349 99350\n99374 99375 99377 99378  \nNOTE:  In order for the services of CPT codes 99291 or 99292 to be paid during the\npreoperative or postoperative period, the critical care service must be unrelated to the\nprocedure. In these situations, the physician must append the modifier -FT ((unrelated\nevaluation and management (E/M) visit on the same day as another E/M visit or during a\nglobal procedure (preoperative, postoperative period, or on the same day as the procedure, as\napplicable). (Report when an E/M visit is furnished within the global period but is unrelated, or\nwhen one or more additional  E/M visits furnished on the same day are unrelated.))\nSee section 30.6.12.7 of this chapter for further discussion of critical care visits unrelated to the\nprocedure with a global surgical period.  \nIf a surgeon is admitting a patient to a nursing facility for a condition not related to the global\nsurgical procedure, the physician should bill for the nursing facility admission and care with a\n“-24” modifier and appropriate documentation.  If a surgeon is admitting a patient to a nursing\nfacility and the patient’s admission to that facility relates to the global surgical procedure, the\nnursing facility admission and any services related to the global surgical procedure are\nincluded in the global surgery fee.  \nC. Exclusions from Prepayment Edits  \nA/B MACs (B) exclude the following services from the prepayment audit process and allow\nseparate payment if all usual requirements are met:  \nServices listed in §40.1.B; and\nServices billed with the modifier “-25,”  “-57,”  “-58,”  “-78,” or “-79.”  \nExceptions",
+      "metadata": {}
+    },
+    {
+      "id": "doc-1",
+      "full_content": "180.2 – Denial Code\n(Rev. 1578, Issued: 08-15-08, Effective: 01-01-09, Implementation: 01-05-09)  \nPrior to the publication of the new CARC #213, there was no specific code to describe claims\nthat are denied based on a violation of the physician self-referral statute at Section 1877 of the\nAct.  A specific code is appropriate so both the providers of DHS and the industry know that\nclaims are being denied based on the non compliance with the physician self-referral\nprohibitions.  This code should be used any time a claim is denied because the physician (or an\nimmediate family member of the physician) has a financial interest in a DHS provider and fails\nto meet one of the exceptions available in 42 C.F.R. §§411.355-411.357.  \n190 – Payer Only Codes Utilized by Medicare\n(Rev. 12789; Issued:08-15-24; Effective: 09-16-24; Implementation: 09-16-24)\nThis section contains the listing of payer codes designated by the National Uniform Billing\nCommittee to be assigned by payers only. Providers shall not submit these codes on their claims\nforms. The definitions indicating Medicare’s usage for these systematically assigned codes are\nindicated next to each code value.\nCondition Codes\n12-14 – Not currently used by Medicare.\n15 – Clean claim is delayed in CMS Processing System.\n16 – SNF Transition exception.\n62 – PIP Bill.\n63 – Bypass CWF edits for incarcerated beneficiaries. Indicates services rendered to a prisoner or\na patient in State or local custody meets the requirement of 42 CFR 411.4(b) for payment.  \n64 – Other Than Clean Claim.\n65 – Non-PPS Bill.\n98 – Data Associated With DRG 468 Has Been Validated.\nEY – Lung Reduction Study Demonstration Claims.\nM0 – All-Inclusive Rate for Outpatient -Used by a Critical Access Hospital electing to be paid an\nall-inclusive rate for outpatient services.  \nM1 – Roster Billed Influenza Virus Vaccine or Pneumococcal Pneumonia Vaccine (PPV). Code\nindicates the influenza virus vaccine or pneumonia vaccine (PPV) is being billed via the roster\nbilling method by providers that mass immunize.",
+      "metadata": {}
+    }
+  ]
+}
