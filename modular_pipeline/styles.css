@@ -1,0 +1,74 @@
+/* ====== Global Typography ====== */
+@font-face { font-family: "SF Pro Display"; src: local("Inter"); } /* fallback */
+:root{
+  --primary:#0071E3; --primary-hover:#0062CC; --destructive:#FF453A;
+  --bg:#F5F5F7; --card:#FFFFFF; --border:#D2D2D7;
+  --text:#1D1D1F; --text-2:#86868B; --log-bg:#0A0A0A; --log-text:#30D158;
+
+  --base:16px; --scale:1.125; /* major third */
+  --r-8:8px; --r-12:12px; --r-16:16px; --r-24:24px;
+}
+
+html, body, .block-container{ background:var(--bg) !important; }
+.block-container{ padding: var(--r-24) !important; }
+
+/* Titles & text weights */
+h1, .stMarkdown h1{ font-family:"SF Pro Display","Inter",system-ui; font-weight:700; color:var(--text);}
+h2, .stMarkdown h2{ font-family:"SF Pro Display","Inter",system-ui; font-weight:600; color:var(--text);}
+.stMarkdown, .stText, .stWrite{ font-family:"SF Pro Display","Inter",system-ui; font-weight:500; color:var(--text);}
+small, .stSlider label, .stRadio label{ font-weight:400; color:var(--text-2); }
+
+/* Cards */
+.rs-card{
+  background:var(--card); border:1px solid var(--border);
+  border-radius:12px; padding:24px; box-shadow:0 1px 3px rgba(0,0,0,0.08);
+  margin-bottom:16px;
+}
+
+/* Tabs (BaseWeb) */
+div[data-baseweb="tab-list"]{ gap:8px !important; }
+div[data-baseweb="tab"]{
+  padding:8px 16px !important; border-radius:8px !important;
+  transition: all 0.2s cubic-bezier(.4,0,.2,1) !important;
+  background:var(--card); border:1px solid var(--border);
+}
+
+/* Buttons */
+.stButton>button{
+  background:var(--primary) !important; color:#fff !important;
+  border:0 !important; border-radius:10px !important; padding:10px 16px !important;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.stButton>button:hover{
+  transform: translateY(-1px);
+  box-shadow: 0 2px 5px rgba(0,113,227,0.3);
+  background:var(--primary-hover) !important;
+}
+.stButton>button[kind="destructive"]{ background:var(--destructive) !important; }
+
+/* File uploader */
+[data-testid="stFileUploader"]{
+  background:var(--card); border:1px solid var(--border);
+  border-radius:12px; padding:16px;
+}
+
+/* Pills */
+.rs-pill{
+  display:inline-flex; align-items:center; gap:8px;
+  border:1px solid var(--border); padding:6px 10px; border-radius:999px;
+  background:#fff; margin:4px 6px 0 0; font-size:13px; color:var(--text);
+}
+
+/* Terminal */
+.rs-terminal{
+  background:var(--log-bg); color:var(--log-text);
+  font-family: "Monaco", "Courier New", monospace; font-size:13px;
+  padding:16px; border-radius:12px; border:1px solid #2e2e2e;
+  height:380px; overflow:auto; white-space:pre-wrap; line-height:1.35;
+}
+
+/* Plotly cleanup (gridless, card bg) applied via layout too; this helps embeds */
+.js-plotly-plot, .plot-container{ background:var(--card) !important; }
+
+/* Sidebar spacing */
+section[data-testid="stSidebar"] .block-container{ padding:24px 16px; }
