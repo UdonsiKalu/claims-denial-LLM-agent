@@ -1,0 +1,1000 @@
+{"cpt_code": "20552", "diagnosis": "M25.561", "modifiers": ["RT", "25"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "E11.9", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "M25.561", "modifiers": ["76", "59"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "F41.1", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "Z79.899", "modifiers": ["LT", "RT"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "F41.1", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "M54.5", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "J45.909", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "F41.1", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "K21.9", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "M25.561", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "I10", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "M54.5", "modifiers": ["91", "59"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "R51", "modifiers": ["91", "LT"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "K21.9", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "N39.0", "modifiers": ["91", "76"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "E11.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "F41.1", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "R51", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "M25.561", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "F41.1", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "M25.561", "modifiers": ["LT", "91"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "K21.9", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "R51", "modifiers": ["RT", "91"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "I10", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "Z79.899", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "Z79.899", "modifiers": ["25", "76"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "M25.561", "modifiers": ["91", "RT"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "J45.909", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "F41.1", "modifiers": ["91", "RT"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "R51", "modifiers": ["76", "91"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "E11.9", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "F41.1", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "F41.1", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "E11.9", "modifiers": ["RT", "25"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "Z79.899", "modifiers": ["25", "76"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "E11.9", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "M25.561", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "M54.5", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "N39.0", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "Z79.899", "modifiers": ["59", "76"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "E11.9", "modifiers": ["25", "RT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "J45.909", "modifiers": ["RT", "25"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "E11.9", "modifiers": ["RT", "25"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "E11.9", "modifiers": ["25", "59"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "N39.0", "modifiers": ["25", "RT"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "J45.909", "modifiers": ["76", "RT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "Z79.899", "modifiers": ["LT", "RT"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "K21.9", "modifiers": ["25", "91"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "Z79.899", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "Z79.899", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M25.561", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "E11.9", "modifiers": ["LT", "25"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "F41.1", "modifiers": ["LT", "59"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "R51", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "E11.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "I10", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "F41.1", "modifiers": ["91", "LT"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "E11.9", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "M25.561", "modifiers": ["76", "25"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "R51", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "N39.0", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "J45.909", "modifiers": ["LT", "76"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "I10", "modifiers": ["91", "LT"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "M25.561", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "K21.9", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "F41.1", "modifiers": ["91", "LT"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "M54.5", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "M25.561", "modifiers": ["LT", "76"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "J45.909", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "K21.9", "modifiers": ["25", "91"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "F41.1", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "J45.909", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M54.5", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "J45.909", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "N39.0", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "R51", "modifiers": ["25", "91"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "R51", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "J45.909", "modifiers": ["RT", "25"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "M25.561", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "M25.561", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "N39.0", "modifiers": ["RT", "LT"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M25.561", "modifiers": ["76", "25"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "J45.909", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "N39.0", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "K21.9", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "E11.9", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "F41.1", "modifiers": ["25", "91"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "M25.561", "modifiers": ["59", "RT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "M25.561", "modifiers": ["25", "91"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "I10", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "I10", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "J45.909", "modifiers": ["RT", "91"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "M54.5", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "Z79.899", "modifiers": ["59", "25"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "R51", "modifiers": ["RT", "LT"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "J45.909", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "Z79.899", "modifiers": ["59", "LT"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "E11.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "M25.561", "modifiers": ["76", "LT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "N39.0", "modifiers": ["RT", "25"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "M25.561", "modifiers": ["91", "59"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "M25.561", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "F41.1", "modifiers": ["LT", "59"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "J45.909", "modifiers": ["91", "RT"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "E11.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "M54.5", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "M54.5", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "R51", "modifiers": ["91", "RT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "J45.909", "modifiers": ["LT", "76"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "J45.909", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "R51", "modifiers": ["59", "25"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "N39.0", "modifiers": ["25", "LT"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "K21.9", "modifiers": ["59", "LT"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "K21.9", "modifiers": ["59", "91"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "M25.561", "modifiers": ["LT", "RT"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "F41.1", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "Z79.899", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "E11.9", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "E11.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "M54.5", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "E11.9", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M25.561", "modifiers": ["RT", "LT"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "J45.909", "modifiers": ["RT", "59"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "I10", "modifiers": ["91", "LT"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "M25.561", "modifiers": ["76", "25"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "E11.9", "modifiers": ["76", "91"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "I10", "modifiers": ["25", "LT"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "N39.0", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "Z79.899", "modifiers": ["RT", "25"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "E11.9", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "I10", "modifiers": ["91", "76"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "J45.909", "modifiers": ["59", "76"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "Z79.899", "modifiers": ["25", "RT"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "M54.5", "modifiers": ["76", "91"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M54.5", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "Z79.899", "modifiers": ["59", "RT"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "I10", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "I10", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "M25.561", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "N39.0", "modifiers": ["59", "LT"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "N39.0", "modifiers": ["76", "91"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "E11.9", "modifiers": ["RT", "91"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "F41.1", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "M25.561", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "Z79.899", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "F41.1", "modifiers": ["RT", "25"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "K21.9", "modifiers": ["RT", "25"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "K21.9", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "E11.9", "modifiers": ["76", "59"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "E11.9", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "F41.1", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "F41.1", "modifiers": ["76", "59"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "F41.1", "modifiers": ["76", "59"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "R51", "modifiers": ["LT", "59"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "M25.561", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "K21.9", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "N39.0", "modifiers": ["76", "LT"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "E11.9", "modifiers": ["59", "LT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "F41.1", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "M54.5", "modifiers": ["LT", "25"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "M54.5", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "I10", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "E11.9", "modifiers": ["25", "59"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "N39.0", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "R51", "modifiers": ["91", "59"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "R51", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "M25.561", "modifiers": ["59", "25"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "E11.9", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "M25.561", "modifiers": ["91", "LT"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "K21.9", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "E11.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "I10", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "I10", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "J45.909", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "M25.561", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "Z79.899", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "N39.0", "modifiers": ["76", "25"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "E11.9", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "K21.9", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "R51", "modifiers": ["25", "59"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "K21.9", "modifiers": ["RT", "91"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "J45.909", "modifiers": ["RT", "76"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "J45.909", "modifiers": ["76", "LT"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "I10", "modifiers": ["25", "76"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "R51", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "Z79.899", "modifiers": ["25", "59"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "K21.9", "modifiers": ["91", "76"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "K21.9", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "R51", "modifiers": ["LT", "25"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "K21.9", "modifiers": ["91", "59"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "K21.9", "modifiers": ["91", "76"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "E11.9", "modifiers": ["RT", "59"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "K21.9", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "M54.5", "modifiers": ["76", "RT"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "K21.9", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "E11.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "N39.0", "modifiers": ["76", "RT"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "E11.9", "modifiers": ["25", "59"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "Z79.899", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "I10", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "K21.9", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "M25.561", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "Z79.899", "modifiers": ["LT", "59"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "M25.561", "modifiers": ["91", "25"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "N39.0", "modifiers": ["76", "25"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "N39.0", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "M54.5", "modifiers": ["RT", "91"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "R51", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "F41.1", "modifiers": ["91", "LT"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "M25.561", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "M54.5", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "M25.561", "modifiers": ["LT", "91"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "F41.1", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "R51", "modifiers": ["RT", "76"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "Z79.899", "modifiers": ["59", "76"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "E11.9", "modifiers": ["91", "59"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "Z79.899", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M25.561", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "I10", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "K21.9", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "M54.5", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "K21.9", "modifiers": ["RT", "59"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "R51", "modifiers": ["LT", "91"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "N39.0", "modifiers": ["59", "RT"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "M54.5", "modifiers": ["LT", "RT"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "N39.0", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "J45.909", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "Z79.899", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "E11.9", "modifiers": ["25", "LT"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "R51", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "I10", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "I10", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "R51", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "E11.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "I10", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "M25.561", "modifiers": ["LT", "76"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "J45.909", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M54.5", "modifiers": ["RT", "91"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "M25.561", "modifiers": ["76", "RT"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "J45.909", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M54.5", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "J45.909", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "M25.561", "modifiers": ["LT", "91"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "Z79.899", "modifiers": ["76", "RT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "R51", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M54.5", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "M25.561", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "N39.0", "modifiers": ["91", "RT"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "F41.1", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "I10", "modifiers": ["LT", "59"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "I10", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "N39.0", "modifiers": ["25", "59"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "R51", "modifiers": ["91", "76"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "R51", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "I10", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "F41.1", "modifiers": ["59", "76"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "Z79.899", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "N39.0", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "F41.1", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "E11.9", "modifiers": ["LT", "59"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "Z79.899", "modifiers": ["76", "RT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "Z79.899", "modifiers": ["LT", "91"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "F41.1", "modifiers": ["59", "LT"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "M25.561", "modifiers": ["59", "76"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "K21.9", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "E11.9", "modifiers": ["RT", "59"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "R51", "modifiers": ["LT", "25"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "M54.5", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "Z79.899", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "M54.5", "modifiers": ["25", "59"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "N39.0", "modifiers": ["RT", "25"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "F41.1", "modifiers": ["76", "RT"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "M25.561", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "K21.9", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "J45.909", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "J45.909", "modifiers": ["RT", "76"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "J45.909", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "F41.1", "modifiers": ["91", "59"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "I10", "modifiers": ["RT", "LT"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "F41.1", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "M54.5", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "M54.5", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "I10", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "E11.9", "modifiers": ["LT", "59"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "I10", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "R51", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "E11.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "N39.0", "modifiers": ["25", "59"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "F41.1", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "K21.9", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M54.5", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "J45.909", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "E11.9", "modifiers": ["76", "RT"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "J45.909", "modifiers": ["LT", "RT"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "K21.9", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "Z79.899", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "I10", "modifiers": ["25", "59"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "N39.0", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "K21.9", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "M54.5", "modifiers": ["LT", "RT"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "J45.909", "modifiers": ["25", "76"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "Z79.899", "modifiers": ["LT", "76"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "N39.0", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "K21.9", "modifiers": ["LT", "RT"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "M25.561", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "J45.909", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "R51", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "J45.909", "modifiers": ["25", "59"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "M54.5", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "M25.561", "modifiers": ["LT", "59"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "M54.5", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "E11.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "I10", "modifiers": ["91", "59"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "R51", "modifiers": ["25", "59"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "E11.9", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "J45.909", "modifiers": ["91", "76"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "F41.1", "modifiers": ["RT", "LT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "M25.561", "modifiers": ["59", "RT"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "K21.9", "modifiers": ["25", "LT"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "E11.9", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "F41.1", "modifiers": ["25", "91"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "M25.561", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "Z79.899", "modifiers": ["76", "91"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "M54.5", "modifiers": ["RT", "91"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "M25.561", "modifiers": ["25", "91"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "M25.561", "modifiers": ["LT", "59"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "K21.9", "modifiers": ["RT", "25"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "K21.9", "modifiers": ["RT", "59"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "E11.9", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "I10", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "M54.5", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "M25.561", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "M25.561", "modifiers": ["25", "91"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "I10", "modifiers": ["25", "LT"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "N39.0", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "M25.561", "modifiers": ["59", "76"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "N39.0", "modifiers": ["91", "25"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "F41.1", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "M25.561", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "M54.5", "modifiers": ["76", "25"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "J45.909", "modifiers": ["LT", "25"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "F41.1", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "M54.5", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "E11.9", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "J45.909", "modifiers": ["59", "LT"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "E11.9", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "J45.909", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "R51", "modifiers": ["91", "76"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "Z79.899", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "Z79.899", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "M25.561", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "M54.5", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "N39.0", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "M54.5", "modifiers": ["59", "RT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "E11.9", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M54.5", "modifiers": ["25", "59"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "F41.1", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "M54.5", "modifiers": ["59", "76"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "M25.561", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "Z79.899", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "N39.0", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "M25.561", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "Z79.899", "modifiers": ["RT", "25"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "K21.9", "modifiers": ["76", "LT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "J45.909", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "I10", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "F41.1", "modifiers": ["76", "RT"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "N39.0", "modifiers": ["25", "RT"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "Z79.899", "modifiers": ["91", "76"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "M25.561", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "I10", "modifiers": ["59", "25"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "Z79.899", "modifiers": ["59", "91"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M25.561", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "E11.9", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "E11.9", "modifiers": ["91", "76"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "E11.9", "modifiers": ["76", "LT"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "I10", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "Z79.899", "modifiers": ["RT", "59"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "E11.9", "modifiers": ["RT", "25"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "N39.0", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "N39.0", "modifiers": ["LT", "91"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "N39.0", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "M54.5", "modifiers": ["59", "LT"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "K21.9", "modifiers": ["59", "LT"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "F41.1", "modifiers": ["59", "RT"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "K21.9", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "E11.9", "modifiers": ["59", "91"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "E11.9", "modifiers": ["LT", "59"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "Z79.899", "modifiers": ["59", "RT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "E11.9", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "Z79.899", "modifiers": ["91", "76"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "J45.909", "modifiers": ["LT", "RT"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "J45.909", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "N39.0", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M54.5", "modifiers": ["59", "91"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "M25.561", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "I10", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "J45.909", "modifiers": ["91", "25"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "F41.1", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "M25.561", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "F41.1", "modifiers": ["25", "RT"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "I10", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "M25.561", "modifiers": ["25", "RT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M25.561", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "R51", "modifiers": ["91", "59"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "E11.9", "modifiers": ["91", "RT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "I10", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "N39.0", "modifiers": ["LT", "25"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "F41.1", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "K21.9", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "J45.909", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "K21.9", "modifiers": ["RT", "91"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "E11.9", "modifiers": ["91", "76"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "F41.1", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "M25.561", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M25.561", "modifiers": ["LT", "59"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "E11.9", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "N39.0", "modifiers": ["76", "RT"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "M25.561", "modifiers": ["25", "76"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M54.5", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "K21.9", "modifiers": ["RT", "59"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "Z79.899", "modifiers": ["25", "59"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "J45.909", "modifiers": ["91", "25"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "J45.909", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "E11.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "M54.5", "modifiers": ["25", "LT"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "N39.0", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "I10", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "J45.909", "modifiers": ["LT", "91"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "R51", "modifiers": ["91", "76"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "I10", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "K21.9", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "F41.1", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "K21.9", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "K21.9", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "I10", "modifiers": ["91", "LT"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "J45.909", "modifiers": ["25", "76"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "N39.0", "modifiers": ["RT", "91"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "K21.9", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "N39.0", "modifiers": ["59", "RT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "N39.0", "modifiers": ["25", "RT"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "K21.9", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "E11.9", "modifiers": ["RT", "25"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "M54.5", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "M54.5", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "M25.561", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "E11.9", "modifiers": ["RT", "91"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "I10", "modifiers": ["59", "RT"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "F41.1", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "E11.9", "modifiers": ["25", "59"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "Z79.899", "modifiers": ["59", "91"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "N39.0", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "M25.561", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "J45.909", "modifiers": ["LT", "76"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "M54.5", "modifiers": ["76", "RT"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "F41.1", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "F41.1", "modifiers": ["76", "LT"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "M54.5", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "E11.9", "modifiers": ["RT", "LT"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "M25.561", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M25.561", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "I10", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "J45.909", "modifiers": ["91", "RT"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "M54.5", "modifiers": ["91", "59"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "J45.909", "modifiers": ["76", "25"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "E11.9", "modifiers": ["RT", "91"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "E11.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "M54.5", "modifiers": ["RT", "59"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "M54.5", "modifiers": ["RT", "91"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "K21.9", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "K21.9", "modifiers": ["RT", "59"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "E11.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "J45.909", "modifiers": ["25", "91"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "M25.561", "modifiers": ["59", "RT"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "K21.9", "modifiers": ["91", "25"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "F41.1", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "K21.9", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "Z79.899", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "N39.0", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "M25.561", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "I10", "modifiers": ["LT", "76"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "M54.5", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "M54.5", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "M54.5", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "M54.5", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "E11.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "I10", "modifiers": ["91", "76"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "K21.9", "modifiers": ["91", "RT"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "R51", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "Z79.899", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "N39.0", "modifiers": ["91", "RT"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "N39.0", "modifiers": ["59", "25"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "R51", "modifiers": ["25", "LT"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "M54.5", "modifiers": ["RT", "25"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "R51", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "M25.561", "modifiers": ["59", "91"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "I10", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "E11.9", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "N39.0", "modifiers": ["25", "RT"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "M54.5", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "J45.909", "modifiers": ["25", "59"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "E11.9", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "M25.561", "modifiers": ["RT", "76"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "R51", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "R51", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "Z79.899", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "E11.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "Z79.899", "modifiers": ["25", "76"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "M54.5", "modifiers": ["RT", "76"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "K21.9", "modifiers": ["LT", "76"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "K21.9", "modifiers": ["76", "91"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "E11.9", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "J45.909", "modifiers": ["RT", "76"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "I10", "modifiers": ["25", "91"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "J45.909", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "R51", "modifiers": ["76", "RT"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "J45.909", "modifiers": ["25", "RT"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "M54.5", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "I10", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "F41.1", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "N39.0", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "M25.561", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "N39.0", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "M25.561", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "E11.9", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "E11.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "M25.561", "modifiers": ["LT", "59"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "R51", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "N39.0", "modifiers": ["59", "RT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "N39.0", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "N39.0", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "E11.9", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "K21.9", "modifiers": ["91", "59"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "R51", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "M54.5", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "F41.1", "modifiers": ["76", "91"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "N39.0", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "E11.9", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "I10", "modifiers": ["91", "76"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "R51", "modifiers": ["25", "LT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M25.561", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "E11.9", "modifiers": ["25", "LT"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M54.5", "modifiers": ["RT", "91"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "Z79.899", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "M25.561", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "J45.909", "modifiers": ["76", "25"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "M54.5", "modifiers": ["RT", "76"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "I10", "modifiers": ["RT", "59"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "M25.561", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "Z79.899", "modifiers": ["25", "59"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "K21.9", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "J45.909", "modifiers": ["LT", "RT"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "M54.5", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "R51", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "J45.909", "modifiers": ["91", "25"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "Z79.899", "modifiers": ["RT", "91"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "I10", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "J45.909", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "I10", "modifiers": ["91", "59"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "R51", "modifiers": ["25", "59"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "F41.1", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "M54.5", "modifiers": ["25", "LT"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "M54.5", "modifiers": ["25", "59"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M25.561", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "Z79.899", "modifiers": ["59", "91"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "M25.561", "modifiers": ["25", "91"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "J45.909", "modifiers": ["59", "RT"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "N39.0", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "K21.9", "modifiers": ["91", "RT"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "N39.0", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "I10", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "Z79.899", "modifiers": ["59", "RT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "N39.0", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "M25.561", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "M54.5", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "K21.9", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "K21.9", "modifiers": ["RT", "25"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "J45.909", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "E11.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "M54.5", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "J45.909", "modifiers": ["76", "59"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "Z79.899", "modifiers": ["76", "RT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "F41.1", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "Z79.899", "modifiers": ["LT", "91"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "M54.5", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "K21.9", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "N39.0", "modifiers": ["76", "25"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "R51", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "M25.561", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "F41.1", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "M25.561", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "M54.5", "modifiers": ["91", "76"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "J45.909", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "Z79.899", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "Z79.899", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M25.561", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "I10", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "K21.9", "modifiers": ["LT", "91"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "K21.9", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "Z79.899", "modifiers": ["76", "59"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "R51", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "J45.909", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "N39.0", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "F41.1", "modifiers": ["25", "LT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "E11.9", "modifiers": ["LT", "59"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "M25.561", "modifiers": ["LT", "RT"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "J45.909", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "K21.9", "modifiers": ["RT", "59"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "E11.9", "modifiers": ["91", "59"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "N39.0", "modifiers": ["76", "25"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "E11.9", "modifiers": ["59", "76"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "F41.1", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "J45.909", "modifiers": ["91", "76"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "R51", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "E11.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "Z79.899", "modifiers": ["LT", "25"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "M25.561", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "M54.5", "modifiers": ["76", "59"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "E11.9", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "R51", "modifiers": ["76", "59"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "N39.0", "modifiers": ["59", "25"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "E11.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "J45.909", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "J45.909", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "E11.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "M54.5", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "K21.9", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "I10", "modifiers": ["76", "25"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "K21.9", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "I10", "modifiers": ["91", "LT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "K21.9", "modifiers": ["25", "76"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "R51", "modifiers": ["RT", "LT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "F41.1", "modifiers": ["76", "91"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "M25.561", "modifiers": ["25", "91"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "I10", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "M25.561", "modifiers": ["RT", "59"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "E11.9", "modifiers": ["RT", "76"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "E11.9", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "M54.5", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "R51", "modifiers": ["91", "76"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "J45.909", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "M54.5", "modifiers": ["76", "LT"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "N39.0", "modifiers": ["25", "76"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "N39.0", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "R51", "modifiers": ["76", "59"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M25.561", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "M54.5", "modifiers": ["LT", "91"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "R51", "modifiers": ["RT", "25"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "M25.561", "modifiers": ["91", "RT"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "R51", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "M25.561", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "J45.909", "modifiers": ["59", "RT"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "J45.909", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "M25.561", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "J45.909", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "I10", "modifiers": ["25", "76"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "M54.5", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "J45.909", "modifiers": ["91", "LT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "E11.9", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "E11.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "F41.1", "modifiers": ["91", "76"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "N39.0", "modifiers": ["RT", "LT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "N39.0", "modifiers": ["76", "RT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "M25.561", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "J45.909", "modifiers": ["RT", "91"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "R51", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "N39.0", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "J45.909", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "F41.1", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "M54.5", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "K21.9", "modifiers": ["91", "LT"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "I10", "modifiers": ["76", "25"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "K21.9", "modifiers": ["76", "25"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "E11.9", "modifiers": ["RT", "59"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "M54.5", "modifiers": ["LT", "RT"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "M54.5", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "M54.5", "modifiers": ["RT", "25"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "M54.5", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "K21.9", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M54.5", "modifiers": ["25", "76"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "N39.0", "modifiers": ["RT", "LT"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "I10", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "I10", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "K21.9", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "F41.1", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "N39.0", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "M54.5", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "M25.561", "modifiers": ["59", "25"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "K21.9", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "K21.9", "modifiers": ["25", "LT"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "E11.9", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "20610", "diagnosis": "R51", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "N39.0", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "J45.909", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "N39.0", "modifiers": ["59"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "E11.9", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "M25.561", "modifiers": ["RT", "LT"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "N39.0", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "R51", "modifiers": ["59", "25"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "M25.561", "modifiers": ["91", "25"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "R51", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "K21.9", "modifiers": ["RT", "25"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "I10", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "J45.909", "modifiers": ["LT"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "M54.5", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "I10", "modifiers": ["25", "76"], "payer": "Medicare"}
+{"cpt_code": "99214", "diagnosis": "M25.561", "modifiers": ["25", "59"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "Z79.899", "modifiers": ["59", "LT"], "payer": "Medicare"}
+{"cpt_code": "36415", "diagnosis": "J45.909", "modifiers": ["76", "RT"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "M54.5", "modifiers": ["76"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "Z79.899", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "J45.909", "modifiers": ["LT", "RT"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "R51", "modifiers": ["59", "76"], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "N39.0", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "81001", "diagnosis": "Z79.899", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "Z79.899", "modifiers": ["RT"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "N39.0", "modifiers": ["25"], "payer": "Medicare"}
+{"cpt_code": "99395", "diagnosis": "R51", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "Z79.899", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "F41.1", "modifiers": ["59", "RT"], "payer": "Medicare"}
+{"cpt_code": "99203", "diagnosis": "I10", "modifiers": ["91", "LT"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "N39.0", "modifiers": ["59", "25"], "payer": "Medicare"}
+{"cpt_code": "G0439", "diagnosis": "E11.9", "modifiers": ["91", "59"], "payer": "Medicare"}
+{"cpt_code": "20552", "diagnosis": "N39.0", "modifiers": ["76", "91"], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "M25.561", "modifiers": [], "payer": "Medicare"}
+{"cpt_code": "99213", "diagnosis": "I10", "modifiers": ["91"], "payer": "Medicare"}
+{"cpt_code": "11721", "diagnosis": "I10", "modifiers": [], "payer": "Medicare"}
